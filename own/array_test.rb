@@ -7,3 +7,10 @@ puts train_types
 #puts train_types[2]
 print fruits_prices[1]#[1]
 #puts fruits_prices[2][0]
+
+puts train_types.index "loca"
+
+
+fruits_prices.each { |fp|
+  puts "name:#{fp[0]}, price: #{fp[1]} yen"
+}
