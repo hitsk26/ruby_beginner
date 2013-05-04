@@ -8,7 +8,7 @@ puts train_types
 print fruits_prices[1]#[1]
 #puts fruits_prices[2][0]
 
-puts train_types.index "loca"
+puts train_types.index("rapid")
 
 
 fruits_prices.each { |fp|
