@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 require 'date'
 
+agile_beginer = ["実践アジャイル入門","山田正樹","やまだまさき","ソフトリサーチセンター",248,2500,2650,"4883732088","978-4883732081",
+    "21 x 14.8 x 2",Date.new(2005,1,25),Date.new(2005,2,2)]
+lego =  ["LEGO入門","山田正樹","やまだまさき","ソフトリサーチセンター",248,2500,2650,"4883732088","978-4883732081",
+    "21 x 14.8 x 2",Date.new(2005,1,25),Date.new(2005,2,2)]
+
+
 titles = ["実践アジャイル入門","入門LEGOMINDSTORM",]
 authors = ["山田正樹","大庭　眞一郎"]
-yomies = ["やまだまさき","おおばしんいちろう"]
+yomies = ["山田正樹""やまだまさき","おおばしんいちろう"]
 publishers =["ソフトリサーチセンター","ソフトバンククリエイティブ"]
 pages = [248,164]
 prices = [2500,2400]
@@ -16,8 +22,8 @@ publish_dates = [Date.new(2005,1,25),Date.new(2006,12,23)]
 purchase_dates = [Date.new(2005,2,2), Date.new(2007,1,10)]
 
 
-#print libraries
 
+#print libraries
 titles.size.times { |i|
   puts "-------------------"
   puts "title:" + titles[i]
@@ -34,3 +40,5 @@ titles.size.times { |i|
   puts "purchase date" + purchase_dates[i].to_s
 }
 
+puts agile_beginer
+puts lego
