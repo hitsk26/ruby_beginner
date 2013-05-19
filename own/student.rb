@@ -7,27 +7,14 @@ class Student
     @price = price
   end
 
+  attr_accessor :name, :age
+  
   def to_s
     str = "#{@name},#{@age}, #{@title},#{@price}"
     return str
   end
 
-  def name
-    @name
-  end
-
-  def age
-    @age
-  end
-
-  def name=(value)
-    @name = value
-  end
-
-  def age=(value)
-    @age = value
-  end
-
+  
 end
 
 shin = Student.new "shin",20,"agile begiener",2500
