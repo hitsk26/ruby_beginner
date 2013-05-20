@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'date'
 
 class BookInfo
@@ -15,7 +16,9 @@ class BookInfo
     "#@title, #@author, #@page, #@publish_date"
   end
 
-  
+  def toFormattedString (sep = "\n")
+    "書籍名: #{@title}#{sep} 著者名:#{@author}#{sep} page:#{@page}#{sep} publish date:#{@publish_date}#{sep}"
+  end
 end
 
 
@@ -26,3 +29,6 @@ book_info = BookInfo.new(
                          Date.new(20045,1,25) )
 
 puts book_info.to_s
+
+puts book_info.toFormattedString
+puts book_info.toFormattedString "/"
